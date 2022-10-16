@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="inicio.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha lista</title>
+</head>
+<body>
+    
+    <div class="cabecario">
+        <div class="logo"></div>
+        <div class="esquerda">
+            <div id="logo" class="logo" onmouseover="cor();"onmouseout="sair();"></div>
+            <div id="opcao" class="logo" onmouseover="cor1();"></div>
+            <div id="opcao1" class="logo" onmouseover="cor2();"></div>
+        </div>
+    </div>
+
+    <div class="baixo">
+        <div class="logo"></div>
+        <div class="logo"></div>
+        <div class="logo"></div>
+        <div class="logo"></div>
+    </div>
+
+</body>
+<script>
+    function cor(){
+        document.getElementById("logo").classList.add('logo1');
+    }
+
+    function cor1(){
+        document.getElementById("opcao").classList.add('logo1');
+    }
+
+    function cor2(){
+        document.getElementById("opcao1").classList.add('logo1');
+    }
+
+    function sair(){
+        document.getElementById("logo").classList.add('logo');
+    }
+</script>
+</html>
