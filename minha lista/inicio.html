@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="inicio.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha lista</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="cabecario">
-        <div class="logo"></div>
-        <div class="esquerda">
-            <div id="logo" class="logo" onmouseover="cor();"onmouseout="sair();"></div>
-            <div id="opcao" class="logo" onmouseover="cor1();"></div>
-            <div id="opcao1" class="logo" onmouseover="cor2();"></div>
+      <div class="logo"></div>
+      <div class="esquerda">
+        <div id="logo" class="logo"></div>
+        <div id="opcao" class="logo">
+          <img src="conta.png" class="imagem" />
         </div>
+        <div id="opcao1" class="logo">
+          <img src="engrenagem.png" class="imagem" />
+        </div>
+      </div>
+    </div>
+    <div class="search-box">
+      <input type="text" class="search-txt" name="" placeholder="Pesquisar" />
+      <a href="#" class="search-btn">
+        <ion-icon name="search-outline"></ion-icon>
+      </a>
+    </div>
+
+    <div class="topo">
+      <div class="nome"><div class="texto"> recomendados: </div></div>
+      <div class="catalogo"></div>
     </div>
 
     <div class="baixo">
-        <div class="logo"></div>
-        <div class="logo"></div>
-        <div class="logo"></div>
-        <div class="logo"></div>
+      <div class="logo"></div>
+      <div class="logo"></div>
+      <div class="logo"></div>
+      <div class="logo"></div>
     </div>
-
-</body>
-<script>
-    function cor(){
-        document.getElementById("logo").classList.add('logo1');
-    }
-
-    function cor1(){
-        document.getElementById("opcao").classList.add('logo1');
-    }
-
-    function cor2(){
-        document.getElementById("opcao1").classList.add('logo1');
-    }
-
-    function sair(){
-        document.getElementById("logo").classList.add('logo');
-    }
-</script>
+  </body>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </html>
