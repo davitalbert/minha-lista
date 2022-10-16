@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div class="topo">
+    <div class="topo1">
       <div class="nome"><div class="texto">Séries:</div></div>
       <div class="catalogo">
         <div class="maisS" onclick="serie();">
@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div class="topo">
+    <div class="topo1">
       <div class="nome"><div class="texto">Filmes:</div></div>
       <div class="catalogo">
         <div class="maisF" onclick="filme();">
@@ -62,7 +62,10 @@
         <div class="logo"><img src="lupa.png" class="lupa" /></div>
         <div class="pesquisar">mais</div>
       </div>
-      <div class="logo"></div>
+      <div class="ver">
+        <div class="logo"><img src="comunidade.png" class="lupa" /></div>
+        <div class="pesquisar">outros</div>
+      </div>
       <div class="logo"></div>
       <div class="logo"></div>
     </div>
@@ -73,10 +76,10 @@
       let t = ""
       t = t + "<div id='obra'>"
       t = t + "<div id='linha'>"
-      t = t + "<input class='info' placeholder='nome do livro' id='nome'>"
-      t = t + "<select class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
-      t = t + "<input class='info' id='opiniao' placeholder='opinião' id='opiniao'></div>"
-      t = t + "<input class='info' id='enter' type='submit' id='opiniao'></div>"
+      t = t + "<input name='nomeL' class='info' placeholder='nome do livro' id='nome'>"
+      t = t + "<select name='nomeL' class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
+      t = t + "<input name='nomeL' class='info' id='opiniao' placeholder='opinião' id='opiniao'></div>"
+      t = t + "<input name='nomeL' class='info' id='enter' type='submit' id='opiniao'></div>"
     listaL.innerHTML = listaL.innerHTML + t
     }
 
@@ -84,10 +87,10 @@
       let t = ""
       t = t + "<div id='obra'>"
       t = t + "<div id='linha'>"
-      t = t + "<input class='info' placeholder='nome do livro' id='nome'>"
-      t = t + "<select class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
-      t = t + "<input class='info' id='opiniao' placeholder='opinião' id='opiniao'></div>"
-      t = t + "<input class='info' id='enter' type='submit' id='opiniao'></div>"
+      t = t + "<input name='nomeS' class='info' placeholder='nome da série' id='nome'>"
+      t = t + "<select name='notaS' class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
+      t = t + "<input name='opiniaoS' class='opiniao' placeholder='opinião' id='opiniao'></div>"
+      t = t + "<input  class='info' id='enter' type='submit' id='opiniao'></div>"
     listaS.innerHTML = listaS.innerHTML + t
     }
 
@@ -95,10 +98,10 @@
       let t = ""
       t = t + "<div id='obra'>"
       t = t + "<div id='linha'>"
-      t = t + "<input class='info' placeholder='nome do livro' id='nome'>"
-      t = t + "<select class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
-      t = t + "<input class='info' id='opiniao' placeholder='opinião' id='opiniao'></div>"
-      t = t + "<input class='info' id='enter' type='submit' id='opiniao'></div>"
+      t = t + "<input name='nomeF' class='info' placeholder='nome do filme' id='nome'>"
+      t = t + "<select name='notaF' class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
+      t = t + "<input name='opiniaoF' class='info' id='opiniao' placeholder='opinião' id='opiniao'></div>"
+      t = t + "<input  class='info' id='enter' type='submit' id='opiniao'></div>"
       listaF.innerHTML = listaF.innerHTML + t
     }
   </script>
