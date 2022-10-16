@@ -28,16 +28,78 @@
     </div>
 
     <div class="topo">
-      <div class="nome"><div class="texto"> recomendados: </div></div>
-      <div class="catalogo"></div>
+      <div class="nome"><div class="texto">livros:</div></div>
+      <div class="catalogo">
+        <div class="maisL" onclick="livro();">
+          <img src="mais.png" class="adicionar" />
+        </div>
+        <div id="listaL"></div>
+      </div>
+    </div>
+
+    <div class="topo">
+      <div class="nome"><div class="texto">Séries:</div></div>
+      <div class="catalogo">
+        <div class="maisS" onclick="serie();">
+          <img src="mais.png" class="adicionar" />
+        </div>
+        <div id="listaS"></div>
+      </div>
+    </div>
+
+    <div class="topo">
+      <div class="nome"><div class="texto">Filmes:</div></div>
+      <div class="catalogo">
+        <div class="maisF" onclick="filme();">
+          <img src="mais.png" class="adicionar" />
+        </div>
+        <div id="listaF"></div>
+      </div>
     </div>
 
     <div class="baixo">
-      <div class="logo"></div>
+      <div class="ver">
+        <div class="logo"><img src="lupa.png" class="lupa" /></div>
+        <div class="pesquisar">mais</div>
+      </div>
       <div class="logo"></div>
       <div class="logo"></div>
       <div class="logo"></div>
     </div>
   </body>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script>
+    function livro(){
+      let t = ""
+      t = t + "<div id='obra'>"
+      t = t + "<div id='linha'>"
+      t = t + "<input class='info' placeholder='nome do livro' id='nome'>"
+      t = t + "<select class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
+      t = t + "<input class='info' id='opiniao' placeholder='opinião' id='opiniao'></div>"
+      t = t + "<input class='info' id='enter' type='submit' id='opiniao'></div>"
+    listaL.innerHTML = listaL.innerHTML + t
+    }
+
+    function serie(){
+      let t = ""
+      t = t + "<div id='obra'>"
+      t = t + "<div id='linha'>"
+      t = t + "<input class='info' placeholder='nome do livro' id='nome'>"
+      t = t + "<select class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
+      t = t + "<input class='info' id='opiniao' placeholder='opinião' id='opiniao'></div>"
+      t = t + "<input class='info' id='enter' type='submit' id='opiniao'></div>"
+    listaS.innerHTML = listaS.innerHTML + t
+    }
+
+    function filme(){
+      let t = ""
+      t = t + "<div id='obra'>"
+      t = t + "<div id='linha'>"
+      t = t + "<input class='info' placeholder='nome do livro' id='nome'>"
+      t = t + "<select class='info' id='nota'> <option value='1'>1</option> <option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></select>"
+      t = t + "<input class='info' id='opiniao' placeholder='opinião' id='opiniao'></div>"
+      t = t + "<input class='info' id='enter' type='submit' id='opiniao'></div>"
+      listaF.innerHTML = listaF.innerHTML + t
+    }
+  </script>
 </html>
